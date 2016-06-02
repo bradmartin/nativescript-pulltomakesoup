@@ -9,7 +9,7 @@
         
         <grid-layout rows="auto, *">
      
-                <ListView row="1" items="{{ users }}" loaded="{{ listLoaded }}" itemLoading="onItemLoading" itemTap="onItemTap" >
+                <ListView row="1" items="{{ users }}" itemLoading="onItemLoading" itemTap="onItemTap" >
                     <ListView.itemTemplate>
                 
                         <StackLayout>
@@ -20,7 +20,7 @@
                                     <button text="ACCEPT" row="2" col="1" />
                                 </grid-layout>
                             </Card:CardView>
-                         </StackLayout>
+                        </StackLayout>
                     
                     </ListView.itemTemplate>
                 </ListView>
