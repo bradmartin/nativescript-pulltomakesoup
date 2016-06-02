@@ -1,0 +1,12 @@
+//default elements
+android {
+    productFlavors {
+        "nativescriptpulltomakesoup" {
+            dimension "nativescriptpulltomakesoup"
+        }
+    }
+}
+
+dependencies {
+    compile 'com.yalantis:pulltomakesoup:1.0.1'
+}
