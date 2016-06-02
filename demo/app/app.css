@@ -1,0 +1,14 @@
+﻿Page {
+    background-color: #ecf1f4;
+}
+
+ActionBar {
+    background-color: #2495d4;
+    color: #fff;
+}
+
+.name {
+  color: #000;
+  font-size: 20;
+  padding:20;
+}

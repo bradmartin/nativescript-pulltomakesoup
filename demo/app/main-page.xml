@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+        xmlns:Card="nativescript-cardview"
+        xmlns:PullToMakeSoup="nativescript-pulltomakesoup" 
+        loaded="pageLoaded">
+        
+  <ActionBar title="Pull To Make Soup :)" />
+    
+  <PullToMakeSoup:PullToMakeSoup loaded="refreshLoaded" refresh="refreshList">
+        
+        <grid-layout rows="auto, *">
+     
+                <ListView row="1" items="{{ users }}" loaded="{{ listLoaded }}" itemLoading="onItemLoading" itemTap="onItemTap" >
+                    <ListView.itemTemplate>
+                
+                        <StackLayout>
+                             <Card:CardView class="cardStyle" margin="10" elevation="20" radius="5">
+                                <grid-layout rows="auto, auto, auto" columns="auto, auto, *">
+                                    <label text="{{ name }}" class="name" textWrap="true" row="1" colSpan="3" />          
+                                    <button text="DECLINE" tap="goAway" row="2" col="0" />
+                                    <button text="ACCEPT" row="2" col="1" />
+                                </grid-layout>
+                            </Card:CardView>
+                         </StackLayout>
+                    
+                    </ListView.itemTemplate>
+                </ListView>
+                     
+        </grid-layout>
+            
+   </PullToMakeSoup:PullToMakeSoup>
+           
+</Page>
